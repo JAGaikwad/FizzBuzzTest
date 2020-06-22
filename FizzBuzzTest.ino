@@ -30,20 +30,19 @@ void loop() {
     }
 
       if(g_display_mode == MODE_FIZZBUZZ) {
-          Serial.print(g_count); // output number         
-          Serial.print(" : FizzBuzz\n"); // output :FizzBuzz
+          Serial.println(g_count); // output number         
+          Serial.print(" : FizzBuzz"); // output :FizzBuzz
         }
         else if(g_display_mode == MODE_FIZZ) {
-          Serial.print(g_count); // output number  
-          Serial.print(" : Fizz\n"); // output :Fizz
+          Serial.println(g_count); // output number  
+          Serial.print(" : Fizz"); // output :Fizz
         }
         else if(g_display_mode == MODE_BUZZ){
-          Serial.print(g_count); // output number  
-          Serial.print(" : Buzz\n"); // output :Buzz
+          Serial.println(g_count); // output number  
+          Serial.print(" : Buzz"); // output :Buzz
         }
         else if(g_display_mode == MODE_OTHER){
-          Serial.print(g_count); // output number
-          Serial.print("\n");
+          Serial.println(g_count); // output number
         }
 
     delay(WAIT_TIME);
